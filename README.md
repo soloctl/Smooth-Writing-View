@@ -1,4 +1,4 @@
-# SmoothWritingView
+# Smooth Writing View
 
 The goal of Smooth Writing View project is to demonstrate a smoothly drawing algorithm with iOS 8 SDK as well as Swift programming language.
 
