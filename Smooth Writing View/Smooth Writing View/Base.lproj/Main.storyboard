@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Smooth_Writing_View" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4UW-Ne-kGy" customClass="SmoothWritingView" customModule="Smooth_Writing_View" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4UW-Ne-kGy" secondAttribute="height" multiplier="1:1" id="4SY-s2-aDf"/>
+                                    <constraint firstAttribute="width" secondItem="4UW-Ne-kGy" secondAttribute="height" multiplier="1:1" id="FrZ-de-PRP"/>
+                                    <constraint firstAttribute="width" constant="700" id="WjC-Z4-dhs"/>
+                                    <constraint firstAttribute="width" secondItem="4UW-Ne-kGy" secondAttribute="height" multiplier="1:1" id="auc-ng-cBS"/>
+                                    <constraint firstAttribute="width" secondItem="4UW-Ne-kGy" secondAttribute="height" multiplier="1:1" id="dry-Fa-bsy"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4SY-s2-aDf"/>
+                                        <exclude reference="FrZ-de-PRP"/>
+                                        <exclude reference="WjC-Z4-dhs"/>
+                                        <exclude reference="auc-ng-cBS"/>
+                                        <exclude reference="dry-Fa-bsy"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="dry-Fa-bsy"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="auc-ng-cBS"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4SY-s2-aDf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="FrZ-de-PRP"/>
+                                        <include reference="WjC-Z4-dhs"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" secondItem="4UW-Ne-kGy" secondAttribute="height" id="8K3-Fo-Eo2"/>
+                            <constraint firstAttribute="centerX" secondItem="4UW-Ne-kGy" secondAttribute="centerX" id="LA8-rY-uXR"/>
+                            <constraint firstAttribute="centerY" secondItem="4UW-Ne-kGy" secondAttribute="centerY" id="eb4-p2-CQx"/>
+                            <constraint firstAttribute="width" secondItem="4UW-Ne-kGy" secondAttribute="width" id="iZs-Vw-PCs"/>
+                            <constraint firstAttribute="height" secondItem="4UW-Ne-kGy" secondAttribute="height" id="v8Q-b3-SPs"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8K3-Fo-Eo2"/>
+                                <exclude reference="iZs-Vw-PCs"/>
+                                <exclude reference="v8Q-b3-SPs"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="8K3-Fo-Eo2"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="v8Q-b3-SPs"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="iZs-Vw-PCs"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
